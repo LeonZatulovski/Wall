@@ -315,12 +315,26 @@ export default function Home() {
               Facebook Wall 2008
             </h1>
             <div className="flex items-center space-x-4">
+              <button
+                onClick={() => window.location.href = `/marketplace?user=${userId}`}
+                className="font-medium cursor-pointer hover:opacity-80 transition-opacity"
+                style={{color: 'var(--color-facebook-blue)'}}
+              >
+                Marketplace
+              </button>
+              <button
+                onClick={() => window.location.href = `/messages?user=${userId}`}
+                className="font-medium cursor-pointer hover:opacity-80 transition-opacity"
+                style={{color: 'var(--color-facebook-blue)'}}
+              >
+                Messages
+              </button>
               <span style={{color: 'var(--color-facebook-darkgray)'}}>
                 Welcome, {userId}!
               </span>
               <button
                 onClick={handleLogout}
-                className="font-medium"
+                className="font-medium cursor-pointer hover:opacity-80 transition-opacity"
                 style={{color: 'var(--color-facebook-blue)'}}
               >
                 Logout

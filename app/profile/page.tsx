@@ -184,7 +184,7 @@ export default function ProfileEdit() {
             </h1>
             <button
               onClick={handleBackToWall}
-              className="facebook-button"
+              className="facebook-button cursor-pointer"
             >
               Back to Wall
             </button>
